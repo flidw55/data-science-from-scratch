@@ -1,3 +1,4 @@
+# coding=utf-8
 from __future__ import division
 from collections import Counter
 from functools import partial
@@ -164,7 +165,7 @@ if __name__ == "__main__":
 
     random.seed(0)   # to get repeatable results
     input_size = 25  # each input is a vector of length 25
-    num_hidden = 5   # we'll have 5 neurons in the hidden layer
+    num_hidden = 10   # we'll have 5 neurons in the hidden layer
     output_size = 10 # we need 10 outputs for each input
 
     # each hidden neuron has one weight per input, plus a bias weight
@@ -217,5 +218,12 @@ if __name__ == "__main__":
                      0,1,1,1,0]) # .@@@.
           ]
     print
+    print "隱藏層層數："+str(num_hidden)
+    print [round(x, 2) for x in
+              predict(  [1,1,1,1,1,
+                         1,0,0,1,1,
+                         0,0,1,1,0,
+                         0,1,1,0,0,
+                         1,1,0,0,0])
+              ]
 
-    
