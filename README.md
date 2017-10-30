@@ -10,7 +10,7 @@ from linear_algebra import distance, vector_mean
 v = [1, 2, 3]
 w = [4, 5, 6]
 print distance(v, w)
-print vector_mean([v, w])
+print vector_mean([v, w])0
 ```
   
 Or can be run from the command line to get a demo of what it does (and to execute the examples from the book):
